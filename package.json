@@ -1,6 +1,6 @@
 {
-  "name": "@moleculeengineering/ib-acl",
-  "version": "1.0.0",
+  "name": "moleculeengineering-lib-acl",
+  "version": "1.0.1",
   "description": "To manage ACL",
   "main": "index.js",
   "dependencies": {

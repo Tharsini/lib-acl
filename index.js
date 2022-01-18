@@ -7,15 +7,13 @@ var uacCategory = require('./uac.json');
  * @param {String} moduleName 
  * @param {String} apiType 
  */
-
-module.exports = function () {
-    validate = async (userTypeId, moduleName, apiType) => {
-        try {
-            return (uacCategory[moduleName] && uacCategory[moduleName][apiType] && uacCategory[moduleName][apiType].indexOf(userTypeId)>=0) || false;
-        } catch (exception) {
-            exception = exception.message || exception;
-            return { error: exception }
-        }
+validate = async (userTypeId, moduleName, apiType) => {
+    try {
+        return (uacCategory[moduleName] && uacCategory[moduleName][apiType] && uacCategory[moduleName][apiType].indexOf(userTypeId) >= 0) || false;
+    } catch (exception) {
+        exception = exception.message || exception;
+        return { error: exception }
     }
-    return {  validate };
 }
+
+module.exports = {validate}
