@@ -1,0 +1,9 @@
+{
+    "COMPANY":{
+        "POST":[1,45,23,56,11],
+        "PATCH":[1],
+        "DELETE":[1],
+        "GETBYID":[1],
+        "GETBULK":[1]
+    }
+}
